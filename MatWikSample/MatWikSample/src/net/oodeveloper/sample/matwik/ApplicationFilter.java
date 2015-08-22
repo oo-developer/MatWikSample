@@ -8,9 +8,9 @@ import org.apache.wicket.protocol.http.WicketFilter;
 @WebFilter(value = "/*", 
 initParams = { 
 	@WebInitParam(name = "applicationClassName", value = "net.oodeveloper.sample.matwik.Application"), 
-	@WebInitParam(name="filterMappingUrlPattern", value="/*") })
+	@WebInitParam(name="filterMappingUrlPattern", value="/*"),
+	@WebInitParam(name="configuration",  value="development") })
 
 public class ApplicationFilter extends WicketFilter  {
 
-	
 }

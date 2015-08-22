@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd"
+	xml:lang="en" lang="en" >
+
+<head>
+  	<title>MatWik Sample</title>
+  	
+  	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="theme-color" content="#81C784"/>
+	
+	<wicket:link>
+  	<link type="text/css" rel="stylesheet" href="resource/css/materialize.min.css"  media="screen,projection"/>
+  	<link type="text/css" rel="stylesheet" href="resource/css/style.css"/>
+  	</wicket:link>
+  	
+</head>	 
+		
+<body>
+
+	<wicket:link>
+	<script type="text/javascript" src="resource/js/jquery-2.1.1.min.js"></script>
+  	<script type="text/javascript" src="resource/js/materialize.min.js"></script>
+	</wicket:link>
+	
+	<script type="text/javascript">
+		$( document ).ready(function() {
+	
+			$('.button-collapse').sideNav({
+		      menuWidth: 300, 
+		      edge: 'left', 
+		      closeOnClick: true 
+		    });
+		});
+	</script>
+	
+
+	<div class="navbar-fixed green lighten-1">
+		<nav>
+	   		<div class="nav-wrapper green lighten-1">
+	      		<ul class="left">
+	      			<li><a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a></li>
+	       			<li><a href="#" wicket:id="BTN_BACK"><i class="material-icons">comment</i></a></li>
+	       			<li><a href="#!" wicket:id="LBL_HELLO" class="brand-logo left">[Label]</a></li>
+	       		</ul>
+	   		</div>
+       	</nav>
+  	</div>
+
+	<ul id="slide-out" class="side-nav">
+		<li class="logo" style="padding: 0px;">
+			<wicket:link>
+				<img src="resource/images/mb-bg-fb-10.png" width="300" height="180"/>
+			</wicket:link>
+		</li>
+		<li>
+			<a wicket:id="BTN_NAV_HOME" style="font-weight: bold; font-size: 1.1rem;" class="bold waves-effect waves-green" href="#gettingStarted">
+				<i class="material-icons center" style="vertical-align: middle;">home</i>
+				Home
+			</a>
+		</li>
+		<li>
+			<a wicket:id="BTN_NAV_FORM" style="font-weight: bold; font-size: 1.1rem;" class="bold waves-effect waves-green" href="#gettingStarted">
+				<i class="material-icons center" style="vertical-align: middle;">text_format</i>
+				Forms
+			</a>
+		</li>
+	</ul>
+
+	<wicket:child />
+
+</body>
+</html>
