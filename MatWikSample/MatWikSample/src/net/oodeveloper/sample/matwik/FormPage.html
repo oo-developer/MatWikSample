@@ -17,35 +17,61 @@
 	    		</div>
 	    		
 	    		<div class="row">
-					<form wicket:id="FORM" class="col s12" autocomplete="off">
+					<form wicket:id="form" class="col s12">
 					  	<div class="row">
-							<div class="input-field col s6 m6 l6">
-							  <input wicket:id="TXT_FNAME" type="text" autocomplete="off"/>
-							  <label for="TXT_FNAME">First Name</label>
+							<div class="input-field col s12 m6 l6">
+								<i class="material-icons prefix">account_circle</i>							
+								<input wicket:id="firstName" type="text" autocomplete="off"/>
+								<label for="firstName">First Name</label>
 							</div>
-							<div class="input-field col s6 m6 l6">
-							  <input wicket:id="TXT_LNAME" type="text" autocomplete="off"/>
-							  <label for="TXT_LNAME">Last Name</label>
+							<div class="input-field col s12 m6 l6">
+							    <i class="material-icons prefix">account_circle</i>
+							    <input wicket:id="lastName" type="text" autocomplete="off"/>
+							    <label for="lastName">Last Name</label>
 							</div>
 					  	</div>
 					  	<div class="row">
 					    	<div class="input-field col s12 m12 l12">
-					      		<input wicket:id="TXT_PW"  type="password" autocomplete="off"/>
-					      		<label for="TXT_PW">Password</label>
-					    	</div>
-					  	</div>
-					  	<div class="row">
-					    	<div class="input-field col s12 m12 l12">
-					      		<input wicket:id="TXT_EMAIL"  type="text" autocomplete="off"/>
+					    	    <i class="material-icons prefix">email</i>
+					      		<input wicket:id="email"  type="email" class="validate" autocomplete="off" />
 					      		<label for="email">Email</label>
 					    	</div>
 					  	</div>
+					  	
+					  	<div class="row">
+					    	<div class="input-field col s12 m12 l12">
+					    	    <i class="material-icons prefix">lock</i>
+					      		<input wicket:id="password" length="12"  type="password" class="validate" autocomplete="off"/>
+					      		<label for="password">Password</label>
+					    	</div>
+					  	</div>
+
+					  	<div class="row">
+					    	<div class="input-field col s12 m6 l6">
+					    	    <i class="material-icons prefix">today</i>
+					      		<input wicket:id="birthday"  type="date" class="datepicker" autocomplete="off"/>
+					      		<label for="birthday">Birthday</label>
+					    	</div>
+					    	<div class="input-field col s12 m6 l6 ">
+					    		<div>
+						    	    <div class="switch">
+							    	<label>
+							      	Newsletter	
+							      	<input wicket:id="wantsToReceiveNewsletter" type="checkbox"/>
+							      	<span class="lever"></span>
+							    	</label>
+						    		</div>
+						  		</div>
+					    	</div>
+					  	</div>
+
 					  	<div class="row">
 					  		<div class="col s6 m6 l6 offset-s6 offset-m6 offset-l6">
-					  			<a wicket:id="BTN_SAVE" class="waves-effect waves-light btn right">
-					  			<i class="material-icons left">save</i>Save</a>
+					  			<a wicket:id="btnSave" class="btn waves-effect waves-light right"><i class="material-icons left">save</i>Save</a>
 					  		</div>
 					  	</div>
+					  	
+					  	
 					</form>
 			  </div>
 	    		

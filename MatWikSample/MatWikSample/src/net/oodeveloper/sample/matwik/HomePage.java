@@ -1,7 +1,5 @@
 package net.oodeveloper.sample.matwik;
 
-import org.apache.wicket.markup.html.form.PasswordTextField;
-import org.apache.wicket.markup.html.form.TextField;
 
 
 public class HomePage extends BasePage {
