@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd"
+	xml:lang="en" lang="en" >
+<head>
+</head>
+<body>
+    <wicket:extend>
+    
+    <div class="container">
+		<h3 class="green-text" style="font-weight: 300;">Collection</h3>
+	</div>
+    
+    <ul class="collection">
+    <li class="collection-item avatar" wicket:id="list">
+    	
+    	<wicket:link>
+      	<img src="resource/images/homer-simpson.jpg" wicket:id="image" alt="" class="circle"/>
+      	</wicket:link>
+      	
+      	<span class="title" wicket:id="headLine">Title</span>
+      	<p class="grey-text" wicket:id="email">First Line</p>
+        <p class="grey-text" wicket:id="birthday">Second Line</p>
+      	
+      	<a href="#!" class="secondary-content">
+      		<i class="material-icons yellow-text" wicket:id="grade0">grade</i>
+      		<i class="material-icons yellow-text" wicket:id="grade1">grade</i>
+      		<i class="material-icons yellow-text" wicket:id="grade2">grade</i>
+      		<i class="material-icons yellow-text" wicket:id="grade3">grade</i>
+      		<i class="material-icons yellow-text" wicket:id="grade4">grade</i>
+      	</a>
+    </li>
+    </ul>
+    
+	</wicket:extend>
+</body>
+</html>	

@@ -40,7 +40,7 @@ public abstract class BasePage extends WebPage {
 		};
 		add(btnNavHome);
 		
-		AjaxLink<Void> btnBavForm = new AjaxLink<Void>("BTN_NAV_FORM") {
+		AjaxLink<Void> btnNavForm = new AjaxLink<Void>("BTN_NAV_FORM") {
 			private static final long serialVersionUID = 1L;
 			
 			@Override
@@ -49,7 +49,18 @@ public abstract class BasePage extends WebPage {
 				setResponsePage(FormPage.class);
 			}
 		};
-		add(btnBavForm);
+		add(btnNavForm);
+		
+		AjaxLink<Void> btnNavCollection = new AjaxLink<Void>("BTN_NAV_COLLECTION") {
+			private static final long serialVersionUID = 1L;
+			
+			@Override
+			public void onClick(AjaxRequestTarget target) {
+				
+				setResponsePage(CollectionPage.class);
+			}
+		};
+		add(btnNavCollection);
 		
 	}
 }
