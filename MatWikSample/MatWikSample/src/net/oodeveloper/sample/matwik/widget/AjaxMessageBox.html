@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd"
+	xml:lang="en" lang="en" >
+
+<wicket:panel>
+
+<div id="modal1" class="modal">
+    
+    <div class="modal-content">
+    	<h4 wicket:id="lblTitle">[Title]</h4>
+      	<p wicket:id="lblMessage">[Message]</p>
+    </div>
+    <div class="modal-footer">
+    	<a wicket:id="lnkPositive" href="#!" class=" modal-action modal-close btn-flat">
+    		<wicket:container wicket:id="lblPositive">[Positive]</wicket:container></a>
+    	<a wicket:id="lnkNegative" href="#!" class=" modal-action modal-close waves-green btn-flat">
+    		<wicket:container wicket:id="lblNegative">[Negative]</wicket:container></a>
+    </div>
+</div>
+
+</wicket:panel>
+
+</html>
