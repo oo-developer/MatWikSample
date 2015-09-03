@@ -72,5 +72,16 @@ public abstract class BasePage extends WebPage {
 			}
 		};
 		add(btnNavMessageBox);
+		
+		AjaxLink<Void> btnNavChart = new AjaxLink<Void>("BTN_NAV_CHART") {
+			private static final long serialVersionUID = 1L;
+			
+			@Override
+			public void onClick(AjaxRequestTarget target) {
+				
+				setResponsePage(ChartPage.class);
+			}
+		};
+		add(btnNavChart);
 	}
 }
